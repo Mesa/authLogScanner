@@ -5,7 +5,6 @@ abstract class Args
     protected $speicher = null;
     protected $regex = null;
     protected $headline = null;
-    protected $post_text = null;
     protected $pre_text = null;
     public $order = false;
     protected $trenner_length = 25;
@@ -30,8 +29,12 @@ abstract class Args
         foreach ($list as $key => $value) {
             $data .= sprintf("%-16s => %3d\n",$key, $value);
         }
-        $data .= $this->post_text;
 
+        if ( $data == $this->pre_text . $this->headline) {
+            $data .= "Nothing found";
+        }
+
+        $data .= "\n\n";
         return $data;
     }
 
