@@ -12,7 +12,7 @@ try {
     $data = $scanner->scanFile($auth_log_path, $auth_log_args);
     echo $data;
     $data = file_get_contents($auth_log_path);
-    file_put_contents($auth_bak_path ."/". date("y.m.d")."auth.log", $data, FILE_APPEND);
+    file_put_contents($auth_bak_path . date("y.m.d")."auth.log", $data, FILE_APPEND);
     file_put_contents($auth_log_path, "");
 } catch (FileScannerException $e) {
     $e->printMessage();
