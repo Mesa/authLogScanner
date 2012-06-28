@@ -1,6 +1,6 @@
 <?php
 
-class InvalidLogin extends Args
+class BreakIn extends Args
 {
     protected $names = null;
 
