@@ -1,6 +1,6 @@
 <?php
 /**
- * @author  Daniel Langemann <daniel.langemann@gmx.de>
+ * @author  Mesa <mesa@xebro.de>
  * @license http://creativecommons.org/licenses/by-nc-sa/3.0/
  * @link    http://www.xebro.de
  *

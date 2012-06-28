@@ -1,12 +1,18 @@
 <?php
+/**
+ * @author Mesa <mesa@xebro.de>
+ * @license http://creativecommons.org/licenses/by-nc-sa/3.0/
+ * @link    http://www.xebro.de
+ */
 
 class FileScannerException extends Exception
 {
     public function printMessage ()
     {
-        echo $this->message . "\n";
-        echo $this->file . " [" . $this->line ."]\n";
-        echo "----------\n";
-        echo $this->getTraceAsString();
+        $msg  = $this->message . "\n";
+        $msg .= $this->file . " [" . $this->line ."]\n";
+        $msg .= "----------\n";
+        $msg .= $this->getTraceAsString();
+        return $msg;
     }
 }

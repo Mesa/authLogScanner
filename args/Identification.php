@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * @author Mesa <mesa@xebro.de>
+ * @license http://creativecommons.org/licenses/by-nc-sa/3.0/
+ * @link    http://www.xebro.de
+ */
 class Identification extends Args
 {
     public function __construct()
